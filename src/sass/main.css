@@ -1,0 +1,59 @@
+*,*::after,*::before {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #325b8f !important;
+  padding: 20px 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #325b8fcd;
+}
+
+.add-city {
+  width: 100%;
+  height: 100%;
+  padding: 0px 70px;
+}
+
+.main {
+  height: 100vh;
+}
+
+.current-weather {
+  height:  760px;
+}
+
+@media (max-width: 760px) {
+  .add-city {
+    padding: 0px;
+  }
+  .navbar {
+    width: 100%;
+    padding: 20px;
+  }
+  .add-city {
+    flex-direction: column !important;
+  }
+
+}
+
+.add-city ul {
+  padding: 0;
+  margin: 0;
+}
+
+.modal {
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
